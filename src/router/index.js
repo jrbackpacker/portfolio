@@ -6,7 +6,6 @@ import Experience from '../components/Experience.vue';
 import Education from '../components/Education.vue';
 import Skills from '../components/Skills.vue';
 import Interests from '../components/Interests.vue';
-import Achievements from '../components/Achievements.vue';
 
 const routes = [
     {
@@ -38,11 +37,7 @@ const routes = [
         name: 'Interests',
         component: Interests,
     },
-    {
-        path: '/logros',
-        name: 'Achievements',
-        component: Achievements,
-    },
+
 ];
 
 const router = createRouter({

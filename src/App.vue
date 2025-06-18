@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import General from './views/General.vue'; // Ajusta la ruta si General.vue está en otro lugar
+import General from './views/General.vue';
 
 export default {
   name: 'App',
@@ -16,24 +16,31 @@ export default {
 </script>
 
 <style>
+/* --- Importación de Google Fonts: Quicksand --- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /* Estilos globales básicos */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Evita scrolls no deseados en la página principal */
+  overflow: hidden;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* Aplicamos Quicksand como fuente principal para toda la aplicación */
+  font-family: 'Quicksand', sans-serif;
+  /* Puedes ajustar el peso de la fuente por defecto aquí, por ejemplo: */
+  font-weight: 400; /* Un peso medio, puedes cambiarlo entre 300 y 700 */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display: flex; /* Usamos flexbox para que General ocupe todo el espacio */
-  height: 100vh; /* Ocupa el 100% del alto de la ventana */
-  width: 100vw; /* Asegura que ocupe el 100% del ancho de la ventana */
+  display: flex;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
