@@ -2,15 +2,22 @@
   <div class="content-component">
     <h1>Habilidades</h1>
     <p><br><br>Manejo bases de datos como MySQL, PostgreSQL, MariaDB, SQL Server y DB4O.</p>
-    <p><br>Utilizo IDEs como IntelliJ IDEA, Android Studio, VS Code y NetBeans para el desarrollo.</p>
+    <p><br>He desarrollado Apis Rest Full con SpringBoot 3, implementando JWT, JPA, DTOs, haciendolas seguras y escalables.</p>
     <p><br>En el frontend, mi experiencia abarca Vue.js, desarrollo nativo Android, JavaScript,
       y Node.js, apoyándome en Vite para el empaquetado.</p>
     <p><br>En cuanto a despliegue y DevOps, tengo experiencia con Docker para la contenerización de aplicaciones.
       Además, despliego en plataformas como Railway, Render, Vercel, Firebase y Google Play Console.</p>
     <p><br>Me gusta resolver problemas con pensamiento lógico y mantener la calma bajo presión.
       Soy curioso, receptivo al feedback y me comprometo con la calidad en cada proyecto.</p>
-    <p><br>He creado este portfolio como aplicación con Vue.js, con transiciones suaves y css responsivo.
-    Lo he desplegado en Vercel y controlado las versiones con GitHub. ( https://github.com/jrbackpacker/portfolio ).</p>
+    <p>
+    <br>
+    He creado este portfolio como aplicación con Vue.js, con transiciones suaves y CSS responsivo.
+    Lo he desplegado en Vercel y controlado las versiones con GitHub.
+    (<a href="https://github.com/jrbackpacker/portfolio" target="_blank" rel="noopener noreferrer">
+    github.com/jrbackpacker/portfolio
+  </a>)
+  </p>
+
     <div class="tech-carousel-container">
       <div class="tech-carousel-track">
         <div
@@ -103,7 +110,7 @@ p {
   color: #34495e;
   margin-top: 1px; /* Ajusta según la separación que quieras de los nombres */
   margin-bottom: 1px;
-  font-size: 1.5rem; /* Reducido para que el texto sea más legible que el nombre/apellido */
+  font-size: 1.3rem; /* Reducido para que el texto sea más legible que el nombre/apellido */
   line-height: 1.1;
   font-family: 'Quicksand', sans-serif;
 }

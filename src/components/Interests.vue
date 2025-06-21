@@ -28,7 +28,7 @@
 <script>
 
 import trailImg from '@/assets/trail.png';
-import chefImg from '@/assets/chef.png';
+import chefImg from '@/assets/profile.jpg';
 import escaladaHieloImg from '@/assets/profile.jpg';
 import ciclismoMontanaImg from '@/assets/profile.jpg';
 import harukiImg from '@/assets/haruki.png';

@@ -11,7 +11,7 @@ import portadaSvg from '@/assets/portada.svg';
 export default {
   name: 'Education',data() {
     return {
-      portadaSvg: portadaSvg, 
+      portadaSvg: portadaSvg,
     };
   },
 };

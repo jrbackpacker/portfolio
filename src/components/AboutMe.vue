@@ -17,13 +17,13 @@
 
 <script>
 
-import portadaSvg from '@/assets/portada.svg'; 
+import portadaSvg from '@/assets/portada.svg';
 
 export default {
   name: 'AboutMe',
   data() {
     return {
-      portadaSvg: portadaSvg, 
+      portadaSvg: portadaSvg,
     };
   },
 };

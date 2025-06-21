@@ -10,7 +10,7 @@ import portadaSvg from '@/assets/portada.svg';
 export default {
   name: 'Experience',data() {
     return {
-      portadaSvg: portadaSvg, 
+      portadaSvg: portadaSvg,
     };
   },
 };
