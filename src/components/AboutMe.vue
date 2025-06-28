@@ -9,7 +9,9 @@
     <p>Actualmente busco oportunidades profesionales donde pueda seguir creciendo, aportar mis conocimientos y enfrentar nuevos retos como desarrollador.</p>
     <div class="contact-info">
       <p class="contact-item">📞 626087141</p>
-      <p class="contact-item">📧 jrbackpacker@hotmail.com</p>
+      <p class="contact-item">
+        📧 <a href="mailto:jrbackpacker@hotmail.com" class="email-link">jrbackpacker@hotmail.com</a>
+      </p>
     </div>
     <img :src="portadaSvg" alt="Decoración de fondo" class="decoration-svg" />
   </div>
@@ -91,6 +93,17 @@ p {
   font-size: 1.3rem;
   line-height: 1.3;
   font-family: 'Quicksand', sans-serif;
+}
+
+.email-link {
+  color: #2980b9;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.email-link:hover {
+  color: #1c6690;
+  text-decoration: none;
 }
 
 /* --- Estilos para el SVG de decoración --- */

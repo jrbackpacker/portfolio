@@ -50,6 +50,7 @@ export default {
   height: 100vh; /* Asegura que ocupe el 100% del alto de la ventana */
   background-color: #34495e;
   box-sizing: border-box; /* Importante para que el padding no añada ancho extra */
+  position: relative; /* Para posicionamiento absoluto en móvil */
 }
 
 .sidebar {
@@ -63,6 +64,83 @@ export default {
   padding: 20px 0;
   border-right: 2px solid #34495e;
   box-sizing: border-box; /* Asegura que el padding no desborde el width */
+  transition: transform 0.3s ease;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .general-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    padding: 10px 0;
+    border-right: none;
+    border-bottom: 2px solid #34495e;
+  }
+
+  .profile-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .navigation-menu li {
+    margin: 5px;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 180px;
+    min-width: 180px;
+  }
+
+  .profile-circle {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Ajustes para el área de contenido */
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Estilos para la navegación */
+.navigation-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  margin: 10px 0;
+}
+
+.navigation-menu a {
+  color: rgba(255, 255, 255, 0.64);
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navigation-menu a:hover,
+.navigation-menu a.router-link-active {
+  color: #fff;
 }
 
 .profile-section {
