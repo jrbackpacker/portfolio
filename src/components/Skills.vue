@@ -1,23 +1,14 @@
 <template>
   <div class="content-component">
     <h1>Habilidades</h1>
-    <p><br><br>Manejo bases de datos como MySQL, PostgreSQL, MariaDB, SQL Server y DB4O.</p>
-    <p><br>He desarrollado Apis Rest Full con SpringBoot 3, implementando JWT, JPA, DTOs, haciendolas seguras y escalables.</p>
-    <p><br>En el frontend, mi experiencia abarca Vue.js, desarrollo nativo Android, JavaScript,
-      y Node.js, apoyándome en Vite para el empaquetado.</p>
-    <p><br>En cuanto a despliegue y DevOps, tengo experiencia con Docker para la contenerización de aplicaciones.
-      Además, despliego en plataformas como Railway, Render, Vercel, Firebase y Google Play Console.</p>
-    <p><br>Me gusta resolver problemas con pensamiento lógico y mantener la calma bajo presión.
-      Soy curioso, receptivo al feedback y me comprometo con la calidad en cada proyecto.</p>
-    <p>
-    <br>
-    He creado este portfolio como aplicación con Vue.js, con transiciones suaves y CSS responsivo.
-    Lo he desplegado en Vercel y controlado las versiones con GitHub.
-    (<a href="https://github.com/jrbackpacker/portfolio" target="_blank" rel="noopener noreferrer">
-    github.com/jrbackpacker/portfolio
-  </a>)
-  </p>
 
+    <p>Manejo bases de datos como MySQL, PostgreSQL, MariaDB, SQL Server y DB4O.</p>
+    <p>He desarrollado APIs REST Full con Spring Boot 3, implementando JWT, JPA y DTOs, haciéndolas seguras y escalables.</p>
+    <p>En el frontend, mi experiencia abarca Vue.js, desarrollo nativo Android, JavaScript y Node.js, apoyándome en Vite para el empaquetado.</p>
+    <p>En cuanto a despliegue y DevOps, tengo experiencia con Docker para la contenerización de aplicaciones. Además, despliego en plataformas como Railway, Render, Vercel, Firebase y Google Play Console.</p>
+    <p>Me gusta resolver problemas con pensamiento lógico y mantener la calma bajo presión. Soy curioso, receptivo al feedback y me comprometo con la calidad en cada proyecto.</p>
+
+    <!-- Carrusel de tecnologías -->
     <div class="tech-carousel-container">
       <div class="tech-carousel-track">
         <div
@@ -29,6 +20,24 @@
         </div>
       </div>
     </div>
+
+    <h3>Proyectos adicionales:</h3>
+
+    <p>• He creado este portfolio como aplicación con Vue.js, con transiciones suaves y CSS responsivo.<br>
+      Lo he desplegado en Vercel y controlado las versiones con GitHub:<br>
+      <a href="https://github.com/jrbackpacker/portfolio" target="_blank" rel="noopener noreferrer">
+        github.com/jrbackpacker/portfolio
+      </a></p>
+
+    <p>• Aplicación web desarrollada con Vue/Vite, Spring Boot, Docker y MySQL.<br>
+      <a href="https://github.com/jrbackpacker/Bunch.git" target="_blank" rel="noopener noreferrer">
+        github.com/jrbackpacker/Bunch
+      </a></p>
+
+    <p>• Aplicación móvil desarrollada con Spring Boot, MySQL, Vue/Vite y Android Studio.<br>
+      <a href="https://github.com/jrbackpacker/Beer_Star.git" target="_blank" rel="noopener noreferrer">
+        github.com/jrbackpacker/Beer_Star
+      </a></p>
   </div>
 </template>
 
@@ -54,7 +63,7 @@ import googlePlayIcon from '@/assets/icons/google-play-store.svg';
 import postgreIcon from '@/assets/icons/postgresql-svgrepo-com.svg';
 
 export default {
-  name: 'TechnologiesCarousel',
+  name: 'Skills',
   data() {
     return {
       technologies: [
@@ -77,62 +86,85 @@ export default {
         { name: 'Spring', icon: springIcon },
         { name: 'XML', icon: xmlIcon },
         { name: 'Postgre', icon: postgreIcon },
-      ],
-    };
-  },
+      ]
+    }
+  }
 };
 </script>
 
 <style scoped>
+/* === Contenedor general === */
 .content-component {
   width: 98%;
-  height: 98%;
+  max-height: 98vh; /* altura máxima relativa a la ventana */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.64);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgb(127, 140, 141);
   text-align: left;
-  align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto; /* permite scroll vertical */
 }
 
+
+/* === Título principal === */
 h1 {
   color: #34495e;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 2rem;
   margin-top: 15px;
+  font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
 
+/* === Subtítulo (Proyectos adicionales) === */
+h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+  font-size: 1.6rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* === Texto principal === */
 p {
   color: #34495e;
-  margin-top: 1px; /* Ajusta según la separación que quieras de los nombres */
-  margin-bottom: 1px;
-  font-size: 1.3rem; /* Reducido para que el texto sea más legible que el nombre/apellido */
-  line-height: 1.1;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
   font-family: 'Quicksand', sans-serif;
 }
 
+/* === Enlaces === */
+a {
+  color: #0077b6;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
 
+a:hover {
+  text-decoration: underline;
+  color: #005f8c;
+  transform: translateY(-1px);
+}
+
+/* === Carrusel de tecnologías === */
 .tech-carousel-container {
   width: 100%;
-  max-width: 900px;
-  height: 100px; /* Altura reducida */
+  max-width: 1200px;
+  height: 120px;
   overflow: hidden;
   position: relative;
-  margin-top: 60px;
+  margin: 40px auto;
   border-radius: 10px;
   background-color: #f0f0f0;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;     /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
-  margin-left: auto;
-  margin-right: auto;      /* Centrado horizontal del carrusel */
+  align-items: center;
+  justify-content: center;
 }
-
 
 .tech-carousel-track {
   display: flex;
@@ -174,5 +206,11 @@ p {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   text-align: center;
+}
+
+/* === Efecto hover contenedor === */
+.content-component:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 </style>

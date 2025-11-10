@@ -5,7 +5,6 @@ import AboutMe from '../components/AboutMe.vue';
 import Experience from '../components/Experience.vue';
 import Education from '../components/Education.vue';
 import Skills from '../components/Skills.vue';
-import Interests from '../components/Interests.vue';
 
 const routes = [
     {
@@ -31,11 +30,6 @@ const routes = [
         path: '/habilidades',
         name: 'Skills',
         component: Skills,
-    },
-    {
-        path: '/intereses',
-        name: 'Interests',
-        component: Interests,
     },
 
 ];

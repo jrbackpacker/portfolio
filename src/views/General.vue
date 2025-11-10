@@ -20,9 +20,6 @@
           <li>
             <router-link to="/habilidades">Habilidades</router-link>
           </li>
-          <li>
-            <router-link to="/intereses">Intereses</router-link>
-          </li>
         </ul>
       </nav>
     </aside>
