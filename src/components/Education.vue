@@ -25,13 +25,22 @@
     <p>• Spring Data (4 horas) - VIEWNEXT</p>
     <p>• Spring Boot (4 horas) - VIEWNEXT</p>
     <p>• Spring Boot Starters (12 horas) - VIEWNEXT</p>
+    <img :src="portadaSvg" alt="Decoración de fondo" class="decoration-svg" />
 
   </div>
 </template>
 
 <script>
+import portadaSvg from '@/assets/portada.svg';
+
 export default {
-  name: 'Education'
+  name: 'Education',
+  data() {
+    // Tienes que añadir esta función data
+    return {
+      portadaSvg: portadaSvg,
+    };
+  },
 };
 </script>
 
@@ -72,6 +81,17 @@ p {
   line-height: 1.5;
   margin-bottom: 12px;
   font-family: 'Quicksand', sans-serif;
+}
+/* --- Estilos para el SVG de decoración --- */
+.decoration-svg {
+  position: absolute; /* Posicionamiento absoluto dentro de .content-component */
+  bottom: -20px; /* Ajusta la posición desde la parte inferior, puedes usar valores negativos */
+  right: -20px;  /* Ajusta la posición desde la derecha, puedes usar valores negativos */
+  width: 300px;  /* Tamaño del SVG, ajusta según necesites */
+  height: auto;  /* Mantiene la proporción del SVG */
+  opacity: 0.2;  /* Lo hace semitransparente, como decoración */
+  pointer-events: none; /* Asegura que no interfiera con clics o eventos */
+  z-index: 0;    /* Asegura que esté por debajo del contenido principal de texto */
 }
 
 /* La regla 'pre' anterior ya no es necesaria */

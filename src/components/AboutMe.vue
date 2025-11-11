@@ -4,9 +4,19 @@
     <p class="name">Jesús</p>
     <p class="surname">Romero Pérez</p>
     <p>Altorreal, Molina de Segura (Murcia).</p>
-    <p><br>Soy Técnico superior en Desarrollo de Aplicaciones Multiplataforma, con experiencia práctica en desarrollo full-stack utilizando tecnologías como Spring Boot, Vue.js, Android, Odoo y bases de datos (MySQL, PostgreSQL, MongoDB y DB4O).</p>
-    <p>Me apasiona crear soluciones funcionales y bien estructuradas, tanto en backend como en frontend, y disfruto del aprendizaje constante y el trabajo en equipo.</p>
-    <p>Actualmente busco oportunidades profesionales donde pueda seguir creciendo, aportar mis conocimientos y enfrentar nuevos retos como desarrollador.</p>
+
+    <p>
+      Desarrollador Full Stack con formación en DAM y especialización en los ecosistemas de Spring Boot y Vue.js . Mi transición al desarrollo de software está impulsada por una pasión por la resolución lógica de problemas y la construcción de soluciones eficientes.
+    </p>
+    <p>
+      Aporto una sólida trayectoria profesional de más de 15 años en sectores de alta exigencia. Mi experiencia como Jefe de Equipo (gestionando seguridad privada para clientes como Amazon y ADIF) y como Operador de Planta Externa me ha permitido desarrollar habilidades clave como el liderazgo, la resolución de incidencias críticas bajo presión y un sólido pensamiento analítico.
+    </p>
+    <p>
+      Hoy, aplico esta misma disciplina y compromiso con la calidad para crear aplicaciones robustas, seguras y escalables. Soy una persona curiosa, receptiva al feedback y siempre lista para aprender y desplegar nuevas tecnologías.
+    </p>
+    <p>
+
+    </p>
     <div class="contact-info">
       <p class="contact-item">📞 626087141</p>
       <p class="contact-item">
@@ -18,7 +28,7 @@
 </template>
 
 <script>
-
+// El script permanece igual
 import portadaSvg from '@/assets/portada.svg';
 
 export default {
@@ -32,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+/* Los estilos permanecen iguales */
 .content-component {
   width: 98%;
   height: 98%;

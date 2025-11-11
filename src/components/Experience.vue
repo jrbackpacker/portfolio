@@ -2,20 +2,30 @@
   <div class="content-component">
     <h1>Experiencia</h1>
 
-    <h3>ViewNext - Murcia (6 meses)</h3>
-    <p>• Participacion en proyectos Full Stack, trabajando con tecnologías como Spring Boot, Vue.js, Node.js, Docker y MySQL.</p>
+    <h3>👨‍💻 ViewNext - Desarrollador Full Stack - Murcia (6 meses)</h3>
+    <p>• Desarrollo integral de soluciones web, construyendo APIs robustas con Spring Boot/Node.js
+      y creando interfaces reactivas con Vue.js. Gestión de entornos de despliegue con Docker y
+      optimización de bases de datos MySQL para asegurar el rendimiento..</p>
 
-    <h3>Operario de Producción Rheinmetall - Jabalí Nuevo (1 año) </h3>
-    <p>• Elaboracion de productos químicos y explosivos.</p>
+    <h3>🏭 Rheinmetall - Operario de Producción - Jabalí Nuevo (1 año) </h3>
+    <p>• Responsable de la línea de producción para la manufactura de productos químicos y explosivos.
+      Supervisión del proceso y manejo de maquinaria especializada, asegurando el cumplimiento
+      estricto de los protocolos de seguridad y normativas de calidad.</p>
 
-    <h3>Jefe de Equipo de Seguridad Prosegur - Murcia (4 años) </h3>
-    <p>• Gestion de equipos de seguridad y servicios en Amazon, ADIF y Primark.</p>
+    <h3>🛡️ Prosegur - Jefe de Equipo de Seguridad - Murcia (4 años) </h3>
+    <p>• Liderazgo de equipos de seguridad en instalaciones de gran afluencia y logística (Amazon, ADIF,
+      Primark). Planificación operativa de servicios, gestión de personal, resolución de incidencias y
+      enlace directo con el cliente para garantizar la protección de activos y personas.</p>
 
-    <h3>Vigilante de Seguridad Vigilante - Alcantarilla (8 años)</h3>
-    <p>• Servicios de vigilancia, acuda y CRA.</p>
+    <h3>📋 Vigilant - Vigilante de Seguridad - Alcantarilla (8 años)</h3>
+    <p>• Ejecución de labores de vigilancia estática y dinámica para la protección de bienes y personas.
+      Gestión de servicios de 'acuda' (respuesta a alarmas) y monitorización de incidencias a través de
+      la Central Receptora de Alarmas (CRA).</p>
 
-    <h3>Operador de Planta Externa Retemur S. Coop. - Alcantarilla (4 años)</h3>
-    <p>• Mantenimiento e instalaciones de redes de telecomunicaciones para Telefonica y Ono.</p>
+    <h3>📡 Retemur S. Coop. - Operador de Planta Externa - Alcantarilla (4 años)</h3>
+    <p>• Instalación y mantenimiento de la infraestructura de red (fibra óptica y par de cobre) para
+      grandes operadores (Telefónica, Ono). Diagnóstico técnico y resolución de averías en campo
+      para garantizar la conectividad y continuidad del servicio al cliente.</p>
     <img :src="portadaSvg" alt="Decoración de fondo" class="decoration-svg" />
   </div>
 </template>

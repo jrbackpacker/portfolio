@@ -38,10 +38,13 @@
       <a href="https://github.com/jrbackpacker/Beer_Star.git" target="_blank" rel="noopener noreferrer">
         github.com/jrbackpacker/Beer_Star
       </a></p>
+    <img :src="portadaSvg" alt="Decoración de fondo" class="decoration-svg" />
   </div>
 </template>
 
 <script>
+
+import portadaSvg from '@/assets/portada.svg';
 import html5Icon from '@/assets/icons/html5.svg';
 import javaIcon from '@/assets/icons/java-4-logo-svgrepo-com.svg';
 import jsIcon from '@/assets/icons/js-badge-svgrepo-com.svg';
@@ -212,5 +215,15 @@ a:hover {
 .content-component:hover {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+}
+.decoration-svg {
+  position: absolute; /* Posicionamiento absoluto dentro de .content-component */
+  bottom: -20px; /* Ajusta la posición desde la parte inferior, puedes usar valores negativos */
+  right: -20px;  /* Ajusta la posición desde la derecha, puedes usar valores negativos */
+  width: 300px;  /* Tamaño del SVG, ajusta según necesites */
+  height: auto;  /* Mantiene la proporción del SVG */
+  opacity: 0.2;  /* Lo hace semitransparente, como decoración */
+  pointer-events: none; /* Asegura que no interfiera con clics o eventos */
+  z-index: 0;    /* Asegura que esté por debajo del contenido principal de texto */
 }
 </style>
