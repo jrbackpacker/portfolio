@@ -6,7 +6,7 @@
     <p>Altorreal, Molina de Segura (Murcia).</p>
 
     <p>
-      Desarrollador Full Stack con formación en DAM y especialización en los ecosistemas de Spring Boot y Vue.js . Mi transición al desarrollo de software está impulsada por una pasión por la resolución lógica de problemas y la construcción de soluciones eficientes.
+      Desarrollador Full Stack con formación en el desarrollo de software multiplataforma y especialización en los ecosistemas de Spring Boot y Vue.js . Mi transición al desarrollo de software está impulsada por una pasión por la resolución lógica de problemas y la construcción de soluciones eficientes.
     </p>
     <p>
       Aporto una sólida trayectoria profesional de más de 15 años en sectores de alta exigencia. Mi experiencia como Jefe de Equipo (gestionando seguridad privada para clientes como Amazon y ADIF) y como Operador de Planta Externa me ha permitido desarrollar habilidades clave como el liderazgo, la resolución de incidencias críticas bajo presión y un sólido pensamiento analítico.
