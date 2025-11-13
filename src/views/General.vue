@@ -155,7 +155,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0 auto 15px auto;
-  background-color: #1edae8;
+  background-color: #7f8c8d;
 }
 
 .profile-pic {
