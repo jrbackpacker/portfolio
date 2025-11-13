@@ -45,14 +45,14 @@ export default {
 /* Los estilos permanecen iguales */
 .content-component {
   width: 98%;
-  height: 98%;
+  max-height: 98vh;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.64);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgb(127, 140, 141);
   text-align: left;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h1 {
