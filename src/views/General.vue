@@ -3,7 +3,7 @@
     <aside class="sidebar">
       <div class="profile-section">
         <div class="profile-circle">
-          <img src="@/assets/profile.jpg" alt="Foto de Perfil" class="profile-pic"/>
+          <img src="@/assets/fortalezas.jpg" alt="Foto de Perfil" class="profile-pic"/>
         </div>
       </div>
       <nav class="navigation-menu">
@@ -79,8 +79,8 @@ export default {
   }
 
   .profile-circle {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
 
   .navigation-menu ul {
@@ -148,21 +148,25 @@ export default {
 .profile-circle {
   width: 170px;
   height: 170px;
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
   border: 3px solid #7f8c8d;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 15px auto;
-  background-color: #7f8c8d;
+  background-color: #1edae8;
 }
 
 .profile-pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* muestra toda la imagen sin recortar */
+  object-position: center top; /* centra y muestra más la parte superior (ajusta según tu foto) */
+  transform: scale(1.1); /* opcional: aleja un poco la imagen */
 }
+
+
 
 .profile-section h2 {
   margin: 10px 0 5px 0;
