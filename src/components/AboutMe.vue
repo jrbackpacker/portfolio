@@ -20,7 +20,7 @@
     <div class="contact-info">
       <p class="contact-item">📞 626087141</p>
       <p class="contact-item">
-        📧 <a href="mailto:jrbackpacker@hotmail.com" class="email-link">jrbackpacker@hotmail.com</a>
+        📧 <a href="mailto:jrbackpacker@hotmail.es" class="email-link">jrbackpacker@hotmail.com</a>
       </p>
     </div>
     <img :src="portadaSvg" alt="Decoración de fondo" class="decoration-svg" />
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-// El script permanece igual
+
 import portadaSvg from '@/assets/portada.svg';
 
 export default {
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped>
-/* Los estilos permanecen iguales */
+
 .content-component {
   width: 98%;
   max-height: 98vh;
@@ -64,7 +64,7 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* Estilos para el nombre */
+
 .name {
   color: #34495e;
   margin-top: 5px;
@@ -117,15 +117,14 @@ p {
   text-decoration: none;
 }
 
-/* --- Estilos para el SVG de decoración --- */
 .decoration-svg {
-  position: absolute; /* Posicionamiento absoluto dentro de .content-component */
-  bottom: -20px; /* Ajusta la posición desde la parte inferior, puedes usar valores negativos */
-  right: -20px;  /* Ajusta la posición desde la derecha, puedes usar valores negativos */
-  width: 300px;  /* Tamaño del SVG, ajusta según necesites */
-  height: auto;  /* Mantiene la proporción del SVG */
-  opacity: 0.2;  /* Lo hace semitransparente, como decoración */
-  pointer-events: none; /* Asegura que no interfiera con clics o eventos */
-  z-index: 0;    /* Asegura que esté por debajo del contenido principal de texto */
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 300px;
+  height: auto;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
 }
 </style>

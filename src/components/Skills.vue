@@ -95,21 +95,21 @@ export default {
 </script>
 
 <style scoped>
-/* === Contenedor general === */
+
 .content-component {
   width: 98%;
-  max-height: 98vh; /* altura máxima relativa a la ventana */
+  max-height: 98vh; 
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.64);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgb(127, 140, 141);
   text-align: left;
   position: relative;
-  overflow-y: auto; /* permite scroll vertical */
+  overflow-y: auto; 
 }
 
 
-/* === Título principal === */
+
 h1 {
   color: #34495e;
   text-align: center;
@@ -119,7 +119,7 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* === Subtítulo (Proyectos adicionales) === */
+
 h3 {
   color: #2c3e50;
   margin-top: 25px;
@@ -127,7 +127,7 @@ h3 {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* === Texto principal === */
+
 p {
   color: #34495e;
   font-size: 1.3rem;
@@ -136,7 +136,7 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* === Enlaces === */
+
 a {
   color: #0077b6;
   text-decoration: none;
@@ -152,7 +152,7 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* === Carrusel de tecnologías === */
+
 .tech-carousel-container {
   width: 100%;
   max-width: 1200px;
@@ -210,7 +210,7 @@ a:hover {
   text-align: center;
 }
 
-/* === Efecto hover contenedor === */
+
 .content-component:hover {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;

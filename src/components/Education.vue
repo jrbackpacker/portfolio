@@ -36,7 +36,7 @@ import portadaSvg from '@/assets/portada.svg';
 export default {
   name: 'Education',
   data() {
-    // Tienes que añadir esta función data
+
     return {
       portadaSvg: portadaSvg,
     };
@@ -47,14 +47,14 @@ export default {
 <style scoped>
 .content-component {
   width: 98%;
-  max-height: 98vh; /* altura máxima relativa a la ventana */
+  max-height: 98vh;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.64);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgb(127, 140, 141);
   text-align: left;
   position: relative;
-  overflow-y: auto; /* permite scroll vertical */
+  overflow-y: auto;
 }
 
 
@@ -67,7 +67,7 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
-/* === Estilos añadidos desde Skills.vue === */
+
 h3 {
   color: #2c3e50;
   margin-top: 25px;
@@ -82,17 +82,17 @@ p {
   margin-bottom: 12px;
   font-family: 'Quicksand', sans-serif;
 }
-/* --- Estilos para el SVG de decoración --- */
+
 .decoration-svg {
-  position: absolute; /* Posicionamiento absoluto dentro de .content-component */
-  bottom: -20px; /* Ajusta la posición desde la parte inferior, puedes usar valores negativos */
-  right: -20px;  /* Ajusta la posición desde la derecha, puedes usar valores negativos */
-  width: 300px;  /* Tamaño del SVG, ajusta según necesites */
-  height: auto;  /* Mantiene la proporción del SVG */
-  opacity: 0.2;  /* Lo hace semitransparente, como decoración */
-  pointer-events: none; /* Asegura que no interfiera con clics o eventos */
-  z-index: 0;    /* Asegura que esté por debajo del contenido principal de texto */
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 300px;
+  height: auto;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* La regla 'pre' anterior ya no es necesaria */
+
 </style>

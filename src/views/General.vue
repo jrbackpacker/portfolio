@@ -42,17 +42,17 @@ export default {
 
 <style scoped>
 .general-layout {
-  display: flex; /* Contenedor flex para barra lateral y contenido */
+  display: flex; 
   width: 100%;
-  height: 100vh; /* Asegura que ocupe el 100% del alto de la ventana */
+  height: 100vh; 
   background-color: #34495e;
-  box-sizing: border-box; /* Importante para que el padding no añada ancho extra */
-  position: relative; /* Para posicionamiento absoluto en móvil */
+  box-sizing: border-box; 
+  position: relative; 
 }
 
 .sidebar {
-  width: 200px; /* Ancho fijo de la barra lateral */
-  min-width: 200px; /* Puedes añadir un mínimo si quieres que no se encoja */
+  width: 200px; 
+  min-width: 200px; 
   background-color: #34495e;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -60,11 +60,11 @@ export default {
   align-items: center;
   padding: 20px 0;
   border-right: 2px solid #34495e;
-  box-sizing: border-box; /* Asegura que el padding no desborde el width */
+  box-sizing: border-box; 
   transition: transform 0.3s ease;
 }
 
-/* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
   .general-layout {
     flex-direction: column;
@@ -96,7 +96,7 @@ export default {
   }
 }
 
-/* Estilos para tablets */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 180px;
@@ -109,7 +109,7 @@ export default {
   }
 }
 
-/* Ajustes para el área de contenido */
+
 .content-area {
   flex: 1;
   padding: 20px;
@@ -117,7 +117,7 @@ export default {
   background-color: #fff;
 }
 
-/* Estilos para la navegación */
+
 .navigation-menu ul {
   list-style: none;
   padding: 0;
@@ -146,9 +146,9 @@ export default {
 }
 
 .profile-circle {
-  width: 170px;
+  width:120px;
   height: 170px;
-  border-radius: 100%;
+  border-radius: 15px;
   overflow: hidden;
   border: 3px solid #7f8c8d;
   display: flex;
@@ -161,9 +161,9 @@ export default {
 .profile-pic {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* muestra toda la imagen sin recortar */
-  object-position: center top; /* centra y muestra más la parte superior (ajusta según tu foto) */
-  transform: scale(1.1); /* opcional: aleja un poco la imagen */
+  object-fit: contain; 
+  object-position: center top; 
+  transform: scale(1.1); 
 }
 
 
@@ -214,23 +214,23 @@ margin-right: 18px;
 }
 
 .content-area {
-  flex-grow: 1; /* Ocupa el espacio restante en horizontal */
-  padding: 20px; /* Espacio interno alrededor del contenido */
-  overflow-y: auto; /* Permite el scroll si el contenido es muy largo */
+  flex-grow: 1; 
+  padding: 20px; 
+  overflow-y: auto; 
   background-color: #34495e;
   box-sizing: border-box;
-  display: flex; /* Convierte el content-area en un contenedor flex */
-  flex-direction: column; /* Para que sus hijos se apilen verticalmente */
-  height: 100%; /* Asegura que el content-area ocupe el 100% de la altura de su padre (general-layout) */
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.4s ease; /* Duración y tipo de la transición */
+  transition: opacity 0.4s ease; 
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0; /* Estado inicial (para entrada) y final (para salida) */
+  opacity: 0; 
 }
 </style>
